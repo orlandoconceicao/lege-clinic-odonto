@@ -36,6 +36,36 @@ body {
     overflow-x: hidden;
 }
 
+/* ===== Image Optimization & CLS Prevention ===== */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* Garante aspect ratio sem layout shift */
+}
+
+img[width][height] {
+    /* Preserve aspect ratio em imagens com width/height definidos */
+    aspect-ratio: attr(width) / attr(height);
+}
+
+/* Previne CLS (Cumulative Layout Shift) em containers de imagens */
+.image-placeholder,
+.member-image,
+.before-after {
+    /* Define aspect ratio 3:2 para imagens */
+    aspect-ratio: 3 / 2;
+    background-color: #f0f0f0;
+    /* Melhora performance com will-change */
+    will-change: contents;
+}
+
+.story-image {
+    aspect-ratio: 5 / 4;
+    background-color: #f0f0f0;
+    will-change: contents;
+}
+
 /* ===== Typography ===== */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
@@ -498,6 +528,7 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow-xl);
     animation: fadeInRight 0.8s ease-out;
+    /* Aspect ratio já definido em regra global */
 }
 
 @keyframes fadeInRight {
@@ -513,9 +544,11 @@ section {
 
 .image-placeholder img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     transition: var(--transition);
+    /* Garante que a imagem preencha o container preservando aspect ratio */
+    display: block;
 }
 
 .diferencial-image:hover img {
@@ -638,11 +671,14 @@ section {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--shadow-xl);
+    /* Aspect ratio 5:4 já definido em regra global */
 }
 
 .story-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* ===== MVV Section ===== */
@@ -706,7 +742,8 @@ section {
     overflow: hidden;
     margin-bottom: 1.5rem;
     box-shadow: var(--shadow-md);
-    height: 300px;
+    /* Aspect ratio 1:1 para fotos de perfil */
+    aspect-ratio: 1;
     transition: var(--transition);
 }
 
@@ -715,6 +752,7 @@ section {
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
+    display: block;
 }
 
 .team-member:hover .member-image img {
@@ -873,7 +911,7 @@ section {
 .before-after {
     position: relative;
     overflow: hidden;
-    height: 300px;
+    /* Aspect ratio 3:2 já definido em regra global */
 }
 
 .before,
@@ -891,6 +929,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .label {
