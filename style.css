@@ -1452,8 +1452,9 @@ section {
 /* ===== Scroll Effects ===== */
 .scroll-reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: var(--transition);
+    transform: translateY(24px);
+    will-change: opacity, transform;
+    transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .scroll-reveal.active {

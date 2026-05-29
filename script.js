@@ -31,22 +31,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ===== Scroll Animations =====
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.05,
+    rootMargin: '0px 0px 150px 0px'
 };
 
-const observer = new IntersectionObserver(function(entries) {
+const scrollRevealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && entry.intersectionRatio > 0) {
             entry.target.classList.add('active');
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Observe all scroll-reveal elements
-document.querySelectorAll('.service-card, .testimonial-card, .team-member, .procedure-card, .reason-card, .info-card, .mvv-card').forEach(el => {
-    el.classList.add('scroll-reveal');
-    observer.observe(el);
+document.addEventListener('DOMContentLoaded', function() {
+    const revealTargets = document.querySelectorAll(
+        '.scroll-reveal, .service-card, .testimonial-card, .team-member, .procedure-card, .reason-card, .info-card, .mvv-card'
+    );
+
+    revealTargets.forEach(el => {
+        el.classList.add('scroll-reveal');
+        scrollRevealObserver.observe(el);
+    });
 });
 
 // ===== Filter Gallery =====
@@ -290,24 +296,6 @@ if ('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
-
-// ===== AOS-like Scroll Animation =====
-function revealOnScroll() {
-    const reveals = document.querySelectorAll('.scroll-reveal');
-    
-    reveals.forEach(reveal => {
-        const windowHeight = window.innerHeight;
-        const elementTop = reveal.getBoundingClientRect().top;
-        const elementVisible = 150;
-        
-        if (elementTop < windowHeight - elementVisible) {
-            reveal.classList.add('active');
-        }
-    });
-}
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // Call on page load
 
 // ===== Form Input Effects =====
 document.addEventListener('DOMContentLoaded', function() {
