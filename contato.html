@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Lege Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">Lege Clinic</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="trabalhos.html" class="nav-link">Trabalhos</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link active">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <p>Estamos aqui para responder suas dúvidas e agendar sua consulta</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Envie uma Mensagem</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="agendamento">Agendamento</option>
+                                <option value="orcamento">Orçamento</option>
+                                <option value="informacoes">Informações</option>
+                                <option value="duvidas">Dúvidas</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" placeholder="Descreva sua mensagem..." rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Informações de Contato</h2>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Endereço</h3>
+                        <p>Av. Paulista, 1000<br>São Paulo - SP<br>CEP: 01311-100</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Telefone</h3>
+                        <p><a href="tel:+551133334444">(11) 3333-4444</a></p>
+                        <p><a href="tel:+551199999999">(11) 99999-9999 WhatsApp</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:contato@legeclinic.com">contato@legeclinic.com</a></p>
+                        <p><a href="mailto:atendimento@legeclinic.com">atendimento@legeclinic.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h3>Horário de Funcionamento</h3>
+                        <p><strong>Segunda a Sexta:</strong> 8h - 20h<br>
+                        <strong>Sábado:</strong> 9h - 17h<br>
+                        <strong>Domingo:</strong> Fechado</p>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Siga Nossas Redes</h3>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link-btn" title="Facebook">
+                                <span class="icon-social-f" style="color: black;">f</span>
+                            </a>
+                            <a href="#" class="social-link-btn" title="Instagram">
+                                <span class="icon-social-ig"><img src="img/ig.webp" alt="Instagram" style="width: 15px; height: 15px;"></span>
+                            </a>
+                            <a href="#" class="social-link-btn" title="WhatsApp">
+                                <span class="icon-social-wa"><img src="img/wt.webp" alt="WhatsApp" style="width: 15px; height: 15px;"></span>
+                            </a>
+                            <a href="#" class="social-link-btn" title="LinkedIn">
+                                <span class="icon-social-in" style="color: black;">in</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-center">Localização</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0961788843857!2d-46.6560799!3d-23.5615288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57a6c5d5d6f1%3A0x5e2e5f9e1c0e0c0e!2sAv.%20Paulista%2C%201000%20-%20S%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Não Encontrou o que Procurava?</h2>
+                <p>Entre em contato conosco através do WhatsApp para atendimento rápido</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Lege%20Clinic" class="btn btn-primary" target="_blank">Conversar no WhatsApp</a>
+                    <a href="tel:+551133334444" class="btn btn-outline">Ligar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lege Clinic</h3>
+                    <p>Odontologia premium com excelência e inovação.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">i</a>
+                        <a href="#" class="social-icon">w</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="trabalhos.html">Trabalhos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📍 Av. Premium, 123 - São Paulo</li>
+                        <li>📞 (11) 99999-9999</li>
+                        <li>✉️ contato@legeclinic.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário</h4>
+                    <ul>
+                        <li>Seg - Sex: 8h - 20h</li>
+                        <li>Sábado: 9h - 17h</li>
+                        <li>Domingo: Fechado</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lege Clinic. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
