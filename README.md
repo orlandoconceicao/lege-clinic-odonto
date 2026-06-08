@@ -1,5 +1,7 @@
 # 🦷 Lege Clinic — Odontologia Premium
 
+🔗 **Acesse o projeto:** https://legeclinicodonto.vercel.app/
+
 Projeto de website moderno e responsivo desenvolvido para uma clínica odontológica premium, focado em **sofisticação visual, experiência do usuário e interatividade moderna**.
 
 A aplicação apresenta páginas institucionais, galeria de procedimentos, formulário de contato, animações suaves e componentes premium utilizando **HTML5, CSS3 e JavaScript Vanilla**.
