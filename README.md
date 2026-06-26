@@ -1,6 +1,6 @@
-# 🦷 Lege Clinic — Odontologia Premium
+# Lege Clinic — Odontologia Premium
 
-🔗 **Acesse o projeto:** https://legeclinicodonto.vercel.app/
+**Acesse o projeto:** https://legeclinicodonto.vercel.app/
 
 Projeto de website moderno e responsivo desenvolvido para uma clínica odontológica premium, focado em **sofisticação visual, experiência do usuário e interatividade moderna**.
 
@@ -8,7 +8,7 @@ A aplicação apresenta páginas institucionais, galeria de procedimentos, formu
 
 ---
 
-# 🚀 Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 - **HTML5**
 - **CSS3**
@@ -20,7 +20,7 @@ A aplicação apresenta páginas institucionais, galeria de procedimentos, formu
 
 ---
 
-# 🏗 Estrutura do Projeto
+# Estrutura do Projeto
 
 ```bash
 lege-clinic/
@@ -49,7 +49,7 @@ lege-clinic/
 
 ---
 
-# 🎯 Objetivo do Projeto
+# Objetivo do Projeto
 
 - Praticar desenvolvimento front-end moderno
 - Criar interfaces premium e elegantes
@@ -60,7 +60,7 @@ lege-clinic/
 
 ---
 
-# ⚙ Funcionalidades do Site
+# Funcionalidades do Site
 
 ✔ Navbar fixa com efeito blur  
 ✔ Menu mobile responsivo  
@@ -76,7 +76,7 @@ lege-clinic/
 
 ---
 
-# 🦷 Procedimentos Apresentados
+# Procedimentos Apresentados
 
 O projeto apresenta diversos tratamentos odontológicos premium:
 
@@ -96,7 +96,7 @@ Cada procedimento contém:
 
 ---
 
-# ✨ Interações JavaScript
+# Interações JavaScript
 
 O projeto utiliza JavaScript para:
 
@@ -113,7 +113,7 @@ O projeto utiliza JavaScript para:
 
 ---
 
-# 🎨 Design e Estilo
+# Design e Estilo
 
 O layout foi desenvolvido com foco em:
 
@@ -136,7 +136,7 @@ Paleta principal:
 
 ---
 
-# 📱 Responsividade
+# Responsividade
 
 O projeto é totalmente responsivo para:
 
@@ -161,7 +161,7 @@ Breakpoints principais:
 
 ---
 
-# 🧠 Conceitos Aplicados
+# Conceitos Aplicados
 
 ✔ Estruturação semântica HTML5  
 ✔ Responsividade avançada  
@@ -174,7 +174,7 @@ Breakpoints principais:
 
 ---
 
-# 🌐 Possíveis Melhorias Futuras
+# Possíveis Melhorias Futuras
 
 - Integração com backend
 - Sistema de agendamento online
@@ -189,11 +189,11 @@ Breakpoints principais:
 
 ---
 
-# 👨‍💻 Autor
+# Autor
 
 **Orlando Conceição**  
 
 Front-End & Backend Developer  
 
-📧 orlandoconceicao94@gmail.com
+contato: orlandoconceicao94@gmail.com
 
