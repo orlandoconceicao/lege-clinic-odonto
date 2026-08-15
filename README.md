@@ -62,17 +62,17 @@ lege-clinic/
 
 # Funcionalidades do Site
 
-✔ Navbar fixa com efeito blur  
-✔ Menu mobile responsivo  
-✔ Hero section animada  
-✔ Sistema de filtro por categorias  
-✔ Galeria de procedimentos  
-✔ Before/After interativo  
-✔ Formulário de contato funcional  
-✔ Scroll animations  
-✔ Contadores animados  
-✔ Scroll suave entre seções  
-✔ Layout totalmente responsivo  
+- Navbar fixa com efeito blur
+- Menu mobile responsivo
+- Hero section animada
+- Sistema de filtro por categorias
+- Galeria de procedimentos
+- Before/After interativo
+- Formulário de contato funcional
+- Scroll animations
+- Contadores animados
+- Scroll suave entre seções
+- Layout totalmente responsivo
 
 ---
 
@@ -163,14 +163,14 @@ Breakpoints principais:
 
 # Conceitos Aplicados
 
-✔ Estruturação semântica HTML5  
-✔ Responsividade avançada  
-✔ Manipulação do DOM  
-✔ UX/UI Design  
-✔ Animações CSS modernas  
-✔ Organização de componentes front-end  
-✔ Landing Pages Premium  
-✔ Performance visual otimizada  
+- Estruturação semântica HTML5
+- Responsividade avançada
+- Manipulação do DOM
+- UX/UI Design
+- Animações CSS modernas
+- Organização de componentes front-end
+- Landing pages premium
+- Performance visual otimizada
 
 ---
 
@@ -189,11 +189,11 @@ Breakpoints principais:
 
 ---
 
-# Autor
+## Autor
 
-**Orlando Conceição**  
+**Orlando Conceição Vilhalba de Almeida**
 
-Front-End & Backend Developer  
+Desenvolvedor Backend em formação, desenvolvendo também experiências web responsivas com HTML, CSS e JavaScript.
 
-contato: orlandoconceicao94@gmail.com
+GitHub: [orlandoconceicao](https://github.com/orlandoconceicao)
 
